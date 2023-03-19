@@ -5,8 +5,7 @@
 }
 
 body {
-    min-height: 100%;
-    overflow: hidden;
+    min-height: 100dvh;
     background: #444;
 }
 
@@ -26,6 +25,10 @@ body {
     font-size: 8rem;
 }
 
+.qbox span {
+    font-size: 3w;
+}
+
 .multiply {
     font-size: 6rem;
 }
@@ -37,7 +40,16 @@ body {
     }
 }
 
-.button-label {
+@media (max-width:767px){
+    .qbox p {
+        font-size: 3rem;
+    }
+
+    .multiply {
+        font-size: 3rem;
+    }
+}
+/* .button-label {
     display: inline-block;
     padding: 1em 2em;
     margin: 0.5em;
@@ -81,7 +93,7 @@ body {
         padding: 0em 1em 3px;
         margin: 0.25em;
     }
-}
+} */
 
 /* #yes-button:checked+.button-label {
     background: #2ecc71;
